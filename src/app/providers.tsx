@@ -9,7 +9,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
   return (
-    <NextUIProvider navigate={router.push}>
+    <NextUIProvider
+      navigate={router.push}
+      className="h-full flex flex-col items-center"
+    >
       <ThemeProvider attribute="class" defaultTheme="dark">
         {children}
       </ThemeProvider>

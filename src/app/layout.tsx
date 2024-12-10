@@ -17,11 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="h-dvh w-dvw">
         <Providers>
           <NavBar />
           <Spacer y={2} />
-          <main className="container flex justify-center px-4">{children}</main>
+          <main className="container flex flex-col px-4 grow mb-4">
+            {children}
+          </main>
         </Providers>
       </body>
     </html>
