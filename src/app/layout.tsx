@@ -16,14 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="h-dvh w-dvw">
+    <html lang="en" suppressHydrationWarning>
+      <body className="h-dvh w-dvw flex flex-col items-center justify-center">
         <Providers>
           <NavBar />
           <Spacer y={2} />
-          <main className="container flex flex-col px-4 grow mb-4">
+          <div className="container flex flex-col px-4 grow mb-4">
             {children}
-          </main>
+          </div>
         </Providers>
       </body>
     </html>

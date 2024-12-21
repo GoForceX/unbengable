@@ -18,7 +18,6 @@ export default function Home() {
           </p>
           <div className="flex flex-row gap-8">
             <Button
-              as={Link}
               className="font-medium"
               href="https://vv.cdn.goforcex.top/张维为_jpg_v3.zip"
             >

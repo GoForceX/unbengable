@@ -11,7 +11,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <NextUIProvider
       navigate={router.push}
-      className="h-full flex flex-col items-center"
+      className="w-full h-full flex flex-col items-center"
     >
       <ThemeProvider attribute="class" defaultTheme="dark">
         {children}
